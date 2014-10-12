@@ -1,0 +1,17 @@
+{{ template "partials/header.html" . }}
+
+<main>
+
+<h1>{{ .Title }}</h1>
+
+<time><p class="post-date">{{ .Date.Format "2 January 2006" }}</p></time>
+
+<article>
+{{ .Content }}
+</article>
+
+</main>
+
+<p class="post-signature">- Arash Payan</p>
+
+{{ template "partials/footer.html" }}
