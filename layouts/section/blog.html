@@ -1,8 +1,13 @@
 {{ template "partials/header.html" . }}
 
-<ul>
+<ul id="blog-list">
     {{ range .Data.Pages }}
-        <li><a href="{{ .Permalink }}">{{.Title}}<a/></li>
+        <li>
+            <a href="{{ .Permalink }}">
+                <h2>{{.Title}}</h2>
+                <p class="post-date">{{ .Date.Format "2 January 2006" }}</p>
+            <a/>
+        </li>
     {{ end }}
 </ul>
 

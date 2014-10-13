@@ -1,5 +1,32 @@
-{{ template "partials/header.html" . }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
 
-<p>only for root content</p>
+    <meta charset="utf-8">
+    <meta name="description" content="The homepage of software developer Arash Payan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{{ template "partials/footer.html" }}
+    <title>{{ .Site.Title }}</title>
+</head>
+
+<body class="homepage">
+    <h1 class="title-name">Arash Payan</h1>
+
+    <main>
+
+    <ul class="list-inline">
+        <li><a href="/blog" class="color-on-hover">read my <strong>Blog</strong></a></li>
+        <li><a href="/work" class="color-on-hover">see my <strong>Work</strong></a></li>
+        <li><a href="https://github.com/arashpayan" class="color-on-hover">fork my <strong>Code</strong></a></li>
+        <li><a href="https://plus.google.com/+ArashPayan" class="color-on-hover">follow on <strong>Google+</strong></a></li>
+        <li><a href="mailto:arash@ara.sh" class="color-on-hover">send me <strong>Email</strong></a></li>
+    </ul>
+
+    <p class="color-white">Hi there! My name is Arash and I'm a freelance developer based in Los Angeles. I create mobile, desktop and server apps for multiple platforms building everything from databases to video games.</p>
+
+    </main>
+
+
+{{ template "partials/footer.html" . }}
