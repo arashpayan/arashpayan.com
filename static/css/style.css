@@ -58,7 +58,10 @@ a {
     text-transform: uppercase;
     letter-spacing: 8px;
     font-size: 50px;
-    margin: 0;
+    /*margin: 0;*/
+    /*margin: -16px -16px 0px -16px;
+    padding: 16px;*/
+    background: black;
 }
 
 main {
@@ -71,8 +74,8 @@ main {
 }
 
 .homepage {
-    background: url('/img/background.jpg') no-repeat center center;
-    background-size: cover;
+    /*background: url('/img/background.jpg') no-repeat center center;
+    background-size: cover;*/
 }
 
 .list-inline {
@@ -82,12 +85,12 @@ main {
 
 .list-inline li {
     display: inline-block;
-    color: #BBB;
+    color: black;
     margin: 0px 24px 8px 0px;
 }
 
 .list-inline li a {
-    color: white;
+    color: black;
 }
 
 .color-on-hover:hover {
@@ -121,4 +124,9 @@ main {
 
 #blog-list li {
     margin-bottom: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
