@@ -1,11 +1,27 @@
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Karla'), local('Karla-Regular'), url(/fonts/Karla-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Karla Bold'), local('Karla-Bold'), url(/fonts/Karla-Bold.ttf) format('truetype');
+}
+
 html {
     height: 100%;
 }
 
 body {
     font-family: 'Karla', sans-serif;
-    margin: 0px;
-    padding: 16px;
+}
+
+zero-padding {
+    padding: -16px;
 }
 
 a, a span {
@@ -41,60 +57,41 @@ a {
     color: #1A9FE7
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}*/
+
+.solid-border {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.circle-img {
+    border-radius: 50%;
+}
+
+.font-karla {
+    font-family: 'Karla', sans-serif;
+}
+
+.center-text {
+    text-align: center;
+}
+
 .post-date {
     color: #888888;
-}
-
-.billboard {
-    background-color:black;
-    margin: -16px -16px 0px -16px;
-    padding: 16px;
-}
-
-.title-name {
-    font-weight: bold;
-    color:white;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    font-size: 50px;
-    /*margin: 0;*/
-    /*margin: -16px -16px 0px -16px;
-    padding: 16px;*/
-    background: black;
-}
-
-main {
-    max-width:800px;
 }
 
 .post-signature {
     margin-top: 48px;
     color: #888888;
-}
-
-.homepage {
-    /*background: url('/img/background.jpg') no-repeat center center;
-    background-size: cover;*/
-}
-
-.list-inline {
-    padding-left: 0px;
-    list-style: none outside none;
-}
-
-.list-inline li {
-    display: inline-block;
-    color: black;
-    margin: 0px 24px 8px 0px;
-}
-
-.list-inline li a {
-    color: black;
-}
-
-.color-on-hover:hover {
-    color: #1A9FE7
 }
 
 .color-white {
@@ -110,7 +107,7 @@ main {
     color: white;
 }
 
-#blog-list a h2 {
+#blog-list a h4 {
     color: black;
     padding: 0px;
     margin: 0px;
@@ -124,9 +121,4 @@ main {
 
 #blog-list li {
     margin-bottom: 16px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }

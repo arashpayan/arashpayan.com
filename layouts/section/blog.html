@@ -1,14 +1,22 @@
 {{ template "partials/header.html" . }}
 
-<ul id="blog-list">
-    {{ range .Data.Pages }}
-        <li>
-            <a href="{{ .Permalink }}">
-                <h2>{{.Title}}</h2>
-                <p class="post-date">{{ .Date.Format "2 January 2006" }}</p>
-            </a>
-        </li>
-    {{ end }}
-</ul>
+<main class="container">
+
+    <div class="center-text">
+        <h4 style="padding-bottom:32px;"><strong>Sometimes, I've got something to say that needs a little more space than a social network post. When that happens, I write it here. For everything else, you can <a href="https://plus.google.com/+ArashPayan">follow me on Google+</a>.</strong></h4>
+    </div>
+
+    <ul id="blog-list">
+        {{ range .Data.Pages }}
+            <li>
+                <a href="{{ .Permalink }}">
+                    <h4>{{.Title}}</h4>
+                    <p class="post-date">{{ .Date.Format "2 January 2006" }}</p>
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+
+</main>
 
 {{ template "partials/footer.html" . }}

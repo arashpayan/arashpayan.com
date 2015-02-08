@@ -2,16 +2,20 @@
 
 <main>
 
-<h1>{{ .Title }}</h1>
+    <div class="container">
 
-<time><p class="post-date">{{ .Date.Format "2 January 2006" }}</p></time>
+        <h1>{{ .Title }}</h1>
 
-<article>
-{{ .Content }}
-</article>
+        <time><p class="post-date">{{ .Date.Format "2 January 2006" }}</p></time>
+
+        <article>
+        {{ .Content }}
+        </article>
+
+        <p class="post-signature">You should <a href="https://plus.google.com/+ArashPayan">follow me on Google+</a>.</p>
+
+    </div>
 
 </main>
-
-<p class="post-signature">You should <a href="https://plus.google.com/+ArashPayan">follow me on Google+</a>.</p>
 
 {{ template "partials/footer.html" }}

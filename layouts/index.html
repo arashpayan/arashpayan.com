@@ -1,16 +1,43 @@
 {{ template "partials/header.html" . }}
 
-    <main>
+    <main class="container">
 
-    <p>Hi there! My name is Arash and I'm a freelance developer based in Los Angeles. I create mobile, desktop and server apps for multiple platforms building everything from databases to video games.</p>
+        <div class="row text-center">
 
-    <p>You've arrived at my home on the web, so feel free to explore, and take a look at the <a href="/work">projects</a> I've worked on.
+            <div class="col-sm-12 center-text">
+                <h3><strong>Hi there, my name's Arash and I create mobile, desktop and server apps, building everything from databases to video games.</strong></h3>
+            </div>
 
-    <p><div><strong>Jabeh</strong><br/>
-        <img src="/img/jabehFeaturedWeb.jpg" /></div></p>
+            <div class="col-sm-12">
+                <h5 style="padding-bottom: 32px;">You've arrived at my home on the web, so feel free to explore, and take a look at the <a href="/projects">projects</a> I've worked on.</h5>
+            </div>
 
-    <p>With nothing but rave reviews, Jabeh is the most successful Shinro game in the Apple App Store. Its simple and intuitive interface makes playing it an effortless and enjoyable experience, and the original art and soundtrack add a level of appeal that's unrivaled by any other.</p>
+            <div class="col-sm-3">
+                <img class="circle-img solid-border" src="/img/projects-bonsai-slice.jpg">
+                <h4 class="center-text"><strong>Bonsai Slice</strong></h4>
+                <p>Fun and easy to play, challenging to master. Slice objects as fast as you can, but watch our for bombs.<br/>For <a href="https://play.google.com/store/apps/details?id=com.playgroundtheory.bonsaislice">Android</a> and <a href="https://itunes.apple.com/us/app/bonsai-slice/id761167894?mt=8">iOS</a></p>
+            </div>
+
+            <div class="col-sm-3">
+                <img class="circle-img solid-border" src="/img/projects-prayer-book.jpg">
+                <h4 class="center-text"><strong>Prayer Book</strong></h4>
+                <p>Prayer Book contains hundreds of prayers from the sacred writings of the Bahá'í Faith in Czech, Dutch, English, Persian, Spanish and Slovak.<br/>For <a href="https://play.google.com/store/apps/details?id=com.arashpayan.prayerbook">Android</a> and <a href="https://itunes.apple.com/us/app/prayer-book/id292151014?mt=8">iOS</a></p>
+            </div>
+
+            <div class="col-sm-3">
+                <img class="circle-img solid-border" src="/img/projects-appirater.jpg">
+                <h4 class="center-text"><strong>Appirater</strong></h4>
+                <p>Gently remind your best users to rate your app so you can achieve a 5 star rating in the App Store.<br/><a href="https://github.com/arashpayan/appirater">GitHub</a></p>
+            </div>
+
+            <div class="col-sm-3">
+                <img class="circle-img solid-border" src="/img/projects-jabeh.jpg">
+                <h4 class="center-text"><strong>Jabeh</strong></h4>
+                <p>The most successful Shinro game in the App Store. Its simple and intuitive interface makes playing it an effortless and enjoyable experience!<br/>For <a href="http://jabeh.org">iOS</a></p>
+            </div>
+
+        </div>
+
     </main>
-
 
 {{ template "partials/footer.html" . }}
