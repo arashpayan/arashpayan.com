@@ -62,15 +62,9 @@ img {
     height: auto;
 }
 
-/*main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0;
-}*/
-
 .solid-border {
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
 }
 
 .circle-img {
