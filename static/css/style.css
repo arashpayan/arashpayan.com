@@ -62,9 +62,13 @@ img {
     height: auto;
 }
 
-.solid-border {
-    border-style: solid;
-    border-width: 2px;
+.project-image {
+    border: 2px solid black;
+    transition: border 0.2s ease-in-out;
+}
+
+.project-image:hover {
+    border: 2px solid #337AB7;
 }
 
 .circle-img {
