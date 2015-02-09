@@ -98,6 +98,21 @@ img {
     color: white;
 }
 
+.ap-thumbnail {
+    padding: 4px;
+    border: 1px solid #D0D0D0;
+    border-radius: 4px;
+    transition: border 0.2s ease-in-out;
+}
+
+.ap-thumbnail:hover {
+    border: 1px solid #337AB7;
+}
+
+.quote-text {
+    font-size: 14px;
+}
+
 #blog-list {
     list-style: none outside none;
     padding-left: 0px;
