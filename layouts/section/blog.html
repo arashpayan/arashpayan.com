@@ -9,7 +9,7 @@
     <ul id="blog-list">
         {{ range .Data.Pages }}
             <li>
-                <a href="{{ .Permalink }}">
+                <a href="{{ .RelPermalink }}">
                     <h4>{{.Title}}</h4>
                     <p class="post-date">{{ .Date.Format "2 January 2006" }}</p>
                 </a>
